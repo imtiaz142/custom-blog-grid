@@ -214,7 +214,7 @@ add_action('wp_head', function () {
     }
 
     #load-more-btn:hover {
-        background: #791501;
+        background: #2375bb;
     }
     </style>
     <?php
