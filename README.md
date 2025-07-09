@@ -11,4 +11,5 @@ A WordPress plugin that displays blog posts in a custom grid layout with AJAX-po
 ## Installation
 1. Upload the plugin to `/wp-content/plugins/custom-blog-grid`
 2. Activate from WordPress admin
-3. Use `[custom_blog_grid]` shortcode on any page or widget
+3. Use `[custom_blog_grid columns="3" posts="5"]
+` shortcode on any page or widget

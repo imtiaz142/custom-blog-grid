@@ -2,13 +2,15 @@ jQuery(document).ready(function ($) {
     $('#load-more-btn').on('click', function () {
         var button = $(this);
         var page = parseInt(button.attr('data-page'));
+        var posts = parseInt(button.attr('data-posts'));
 
         $.ajax({
             url: customBlogGrid.ajaxurl,
             type: 'POST',
             data: {
                 action: 'load_more_blogs',
-                page: page
+                page: page,
+                posts: posts
             },
             beforeSend: function () {
                 button.text('Loading...');
